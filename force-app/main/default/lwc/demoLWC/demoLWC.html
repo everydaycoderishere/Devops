@@ -1,0 +1,15 @@
+<template>
+    <p>Welcome to LWC </p>
+    First Name : {firstName} <br/>
+    First Name : {lastName} <br/>
+
+    Total Pages : {totalPages} <br/>
+
+    
+    <lightning-card title="HelloWorld" icon-name="custom:custom:14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting} 😄</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

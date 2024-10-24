@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-2">
+        <abbr class="slds-required" title="required">* </abbr>Search</label>
+        <div class="slds-form-element__control">
+        <input type="text" id="text-input-id-2" placeholder="Search Account" onchange={inputChangeHandler}  class="slds-input" />
+        <!-- <lightning-input label="Name" value={accountName} onchange={inputChangeHandler}></lightning-input> -->
+        </div>
+        </div>
+        <button class="slds-button slds-button_neutral" onclick={searchHandler}>Click Here</button>
+    <div style="height:500px">
+       <lightning-datatable key-field="Id"
+               data={accounts}
+               columns={columns}
+               enable-infinite-loading
+               onloadmore={loadMoreData}
+               hide-checkbox-column="true"
+               show-row-number-column="true">
+       </lightning-datatable> 
+   </div>
+   </template>
