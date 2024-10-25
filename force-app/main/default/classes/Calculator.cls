@@ -1,5 +1,4 @@
 public with sharing class Calculator {
-   
 
     public integer add(integer a,integer b){
         return a+b;
@@ -10,4 +9,6 @@ public with sharing class Calculator {
     public integer mul(integer a,integer b){
         return a*b;
     }
+  
+
 }
